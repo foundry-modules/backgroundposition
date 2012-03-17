@@ -15,7 +15,6 @@
  *   }, 1000);
  * @requires jQuery 1.4.3+
  */
-(function ($) {
   var bgpos = 'background-position', cc = $.camelCase;
   function normalize(value) {
     var h = '100%', z = '0px', options = {top : z, bottom: h, left: z, right: h};
@@ -38,4 +37,3 @@
       $.style(fx.elem, fx.prop, fx.now);
     };
   });
-}(jQuery));
