@@ -1,11 +1,7 @@
-include ../../build/modules.mk
+all: modularize minify
 
-MODULE = backgroundPosition
-FILENAME = ${MODULE}.js
-SOURCE = jquery.${MODULE}.js
-PRODUCTION = ${PRODUCTION_DIR}/${FILENAME}
-DEVELOPMENT = ${DEVELOPMENT_DIR}/${FILENAME}
+include ../../build/module.single.mk
 
-all:
-	${MODULARIZE} -n "${MODULE}" ${SOURCE} > ${DEVELOPMENT}
-	${UGLIFYJS} ${DEVELOPMENT} > ${PRODUCTION}
+MODULE = backgroundposition
+FILENAME = jquery.backgroundPosition.js
+SOURCE_DIR = .
