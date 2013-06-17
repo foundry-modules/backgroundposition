@@ -1,7 +1,7 @@
-all: modularize minify
+all: modularize-script minify-script
 
 include ../../build/modules.mk
 
 MODULE = backgroundposition
-FILENAME = jquery.backgroundPosition.js
-SOURCE_DIR = .
+SOURCE_SCRIPT_FOLDER = .
+SOURCE_SCRIPT_FILE_NAME = backgroundPosition
